@@ -1,0 +1,81 @@
+/* Root styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Heading */
+.container h1 {
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Upload button */
+.container button {
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  color: white;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.4);
+}
+
+.container button:hover {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(99, 102, 241, 0.5);
+}
+
+.container button:active {
+  transform: translateY(0);
+}
+
+/* File name preview */
+.file-preview {
+  font-size: 0.95rem;
+  color: white;
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 18px;
+  border-radius: 10px;
+  word-break: break-all;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Animation on file preview */
+.file-preview:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
