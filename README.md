@@ -1,91 +1,119 @@
-# File Sharing App
+# 🚀 File Sharing App  
 
-This is a file-sharing application built with the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to upload files and share them with others via a unique link.
+**Live Demo:** 🔗 [https://file-sharing-app-vtsk.onrender.com](https://file-sharing-app-vtsk.onrender.com)
 
-## Features
+A modern and secure **File Sharing Web Application** built using the **MERN stack (MongoDB, Express.js, React, Node.js)**.  
+It enables users to **upload files, generate unique shareable links, and download files seamlessly** with an intuitive user interface and reliable backend.
 
--   Upload files to the server.
--   Get a unique link for each uploaded file.
--   Download files using the unique link.
+---
 
-## Tech Stack
+## ✨ Features  
 
-**Frontend:**
+- 📤 Upload Files easily to the cloud  
+- 🔗 Generate a unique shareable link for each upload  
+- 📥 Download files using the generated link  
+- ⚡ Fast and lightweight frontend powered by Vite  
+- 🧩 Secure and scalable backend using MongoDB and Multer  
 
--   React
--   Vite
--   CSS
+---
 
-**Backend:**
+## 🛠️ Tech Stack  
 
--   Node.js
--   Express.js
--   MongoDB
--   Mongoose
--   Multer
+**Frontend:**  
+React (Vite), CSS  
 
-## Getting Started
+**Backend:**  
+Node.js, Express.js, MongoDB, Mongoose, Multer  
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+---
 
-### Prerequisites
+## ⚙️ Getting Started  
 
--   Node.js (v14 or later)
--   npm
--   MongoDB (Make sure you have a running instance of MongoDB and have the connection string)
+Follow these steps to set up and run the project locally on your system.  
 
-### Installation
+### ✅ Prerequisites  
 
-1.  **Clone the repository:**
+Make sure you have installed:  
+- Node.js (v14 or higher)  
+- npm  
+- MongoDB (local or cloud instance)  
 
-    ```bash
-    git clone https://github.com/your-username/file-sharing-app.git
-    cd file-sharing-app
-    ```
+---
 
-2.  **Install backend dependencies:**
+### 📦 Installation  
 
-    ```bash
-    npm install
-    ```
+1. Clone the repository and open it in your code editor  
+2. Install backend dependencies using `npm install`  
+3. Open the frontend folder and install frontend dependencies using `npm install`  
+4. Create a `.env` file in the root directory and add:  
+   - PORT=9000  
+   - MONGODB_URI=<your_mongodb_connection_string>  
 
-3.  **Install frontend dependencies:**
+---
 
-    ```bash
-    cd frontend
-    npm install
-    cd ..
-    ```
+### ▶️ Running the App  
 
-4.  **Create a `.env` file in the root directory and add the following environment variables:**
+Start the backend server using `npm start`  
+The backend will run on `http://localhost:9000`  
 
-    ```env
-    PORT=8000
-    MONGODB_URI=<your_mongodb_connection_string>
-    ```
+Start the frontend development server using `npm run dev` inside the frontend folder  
+The frontend will run on `http://localhost:5173`  
 
-### Running the app
+---
 
-1.  **Start the backend server:**
+## 📡 API Endpoints  
 
-    ```bash
-    npm start
-    ```
+| Method | Endpoint           | Description                     |
+|:-------|:-------------------|:---------------------------------|
+| POST   | /upload            | Upload a file                    |
+| GET    | /files/:fileId     | Download a file by its unique ID |
 
-    The backend server will be running on `http://localhost:9000`.
+---
 
-2.  **Start the frontend development server:**
+## 📁 Folder Structure  
 
-    ```bash
-    cd frontend
-    npm run dev
-    ```
+file-sharing-app/  
+│  
+├── backend/  
+│   ├── controllers/  
+│   ├── models/  
+│   ├── routes/  
+│   ├── uploads/  
+│   └── index.js  
+│  
+├── frontend/  
+│   ├── src/  
+│   ├── public/  
+│   └── vite.config.js  
+│  
+├── .env  
+├── package.json  
+└── README.md  
 
-    The frontend will be running on `http://localhost:5173`.
+---
 
-## API Endpoints
+## 💡 Future Enhancements  
 
-The following API endpoints are available:
+- User Authentication (Google / Email login)  
+- File upload progress tracking  
+- Cloud storage integration (AWS S3 / Firebase)  
+- File expiry and download limit system  
+- Responsive drag-and-drop upload interface  
 
--   `POST /upload`: Upload a file.
--   `GET /files/:fileId`: Download a file with the given ID.
+---
+
+## 🧠 Learning Highlights  
+
+- Built a secure file-sharing system using Multer and Express  
+- Integrated MongoDB for storing file metadata and links  
+- Deployed a full-stack MERN application on Render  
+- Strengthened knowledge of REST APIs and frontend-backend communication  
+
+---
+
+## 👨‍💻 Author  
+
+**Vansh Gaikwad**  
+Full Stack Developer  
+
+🏆 *“Simple, fast, and secure — File Sharing made effortless.”*
